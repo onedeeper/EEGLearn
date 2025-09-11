@@ -1,10 +1,7 @@
-# EEG Graph Learning
 
-Graph-based machine learning for EEG data analysis using self-supervised learning approaches.
+## Watch the video
 
-## Project Overview
-
-This repository contains the implementation of graph-based machine learning models for self-supervised pre-training on EEG data. The goal is to develop robust representations of EEG signals that can be used for downstream tasks such as psychiatric condition classification.
+https://www.youtube.com/watch?v=EH4AaAEidVw
 
 ## Installation
 
