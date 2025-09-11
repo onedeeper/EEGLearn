@@ -36,7 +36,7 @@ else
     eval "$(conda shell.bash hook)" > /dev/null 2>&1
 fi
 
-ENV_NAME="eeg-graph-learning-test"
+ENV_NAME="EEGLearn"
 # Check if the environment exists first
 if ! conda env list | grep -q "$ENV_NAME"; then
     echo "🐍 Setting up conda environment..."

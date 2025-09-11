@@ -232,7 +232,7 @@ class Energy(Dataset):
         if work_dir is None:
             self.project_root : Path = Path(__file__).resolve().parent.parent.parent
             assert self.project_root.name == \
-            'eeg-graph-learning',"project_root is not eeg-graph-learning"
+            'EEGLearn',"project_root is not EEGLearn"
         else:
             self.project_root = Path(work_dir).expanduser().resolve()
         
@@ -850,8 +850,8 @@ if __name__ == "__main__":
     # print(dataset[0][0].shape, dataset[0][1])
     # for data in dataset:
     #     print(dataset[0][1])
-    dataset.run_spatial_permutations_parallel(save_to_disk=True)
-    dataset.run_freq_permutations_parallel(save_to_disk=True)
+    #dataset.run_spatial_permutations_parallel(save_to_disk=True)
+    #dataset.run_freq_permutations_parallel(save_to_disk=True)
     
     
 

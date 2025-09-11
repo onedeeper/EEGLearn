@@ -37,13 +37,13 @@ else
 fi
 
 
-ENV_NAME="eeg-graph-learning"
+ENV_NAME="EEGLearn"
 LOCKED_YAML="environment.lock.yml"
 FALLBACK_YAML="environment.yml"
 
-if ["OS_TYPE" = "mac"]; then
+if [ "$OS_TYPE" = "mac" ]; then
     LOCKED_YAML="environment.lock.mac.yml"
-  FALLBACK_YAML="environment.mac.yml"
+    FALLBACK_YAML="environment.mac.yml"
 fi
 
 # Check if the env exists (name matches file stem) 
