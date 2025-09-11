@@ -1,4 +1,4 @@
-name: eeg-graph-learning
+name: EEGLearn
 channels:
   - pytorch
   - conda-forge
