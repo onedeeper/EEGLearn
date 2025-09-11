@@ -44,7 +44,7 @@ tests/test_data/TDBRAIN-dataset/derivatives/sub-88046393/ses-1/eeg/*
 
 # Jupyter Notebooks
 .ipynb_checkpoints
-
+experiment.ipynb
 # VS Code
 .vscode/
 
