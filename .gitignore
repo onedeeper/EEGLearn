@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Preprocessing logs
+# Preprocessing logs
+eeglearn/preprocess/preprocessing_log.txt
+**/preprocessing_log.txt
+**/preprocessing_log/
+preprocessing_log/
+
+# Data directories
+/data/*
+!/data/.gitkeep
+!/data/df_participants.pkl
+!/data/df_selected_stat_features.pkl
+setup_
+
+# Test data
+.coverage*
+tests/test_data/*
+tests/experiments/*
+tests/test_data/data/cleaned/sub-19740274/ses-1/eeg/*
+tests/test_data/TDBRAIN-dataset/derivatives/sub-88046393/ses-1/eeg/*
+!/tests/test_data/.gitkeep
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Experiment results
+/experiments/results/
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/Ê
+setup_my_env_vars.sh
+
+#  misc
+create_directory_structure.py
+
+# Ruff cache
+.ruff_cache/
+# Model graph loaders
+eeglearn/models/*.pt

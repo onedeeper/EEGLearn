@@ -1,0 +1,31 @@
+[tool.ruff]
+# Same as Black.
+line-length = 88
+target-version = "py38"
+
+[tool.ruff.lint]
+# Enable pycodestyle (`E`), Pyflakes (`F`), etc.
+select = [
+  "F",  # Pyflakes — unused imports, etc.
+  "E",  # Pycodestyle
+  "B",  # flake8‑bugbear (defensive programming)
+  "C4", # flake8‑comprehensions
+  "PL", # Pylint‑derived rules (gives us func‑length checks)
+  "ARG" # flake8‑unused‑arguments
+]
+
+ignore = ["D203", "D213"]  # Ignore conflicting rules
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.ruff.lint.per-file-ignores]
+# Ignore specific rules for specific files
+"__init__.py" = ["F401"]
