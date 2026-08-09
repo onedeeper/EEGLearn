@@ -66,3 +66,7 @@ create_directory_structure.py
 .ruff_cache/
 # Model graph loaders
 eeglearn/models/*.pt
+
+# MacOS generated files
+.DS_Store
+eeglearn/.DS_Store

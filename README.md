@@ -6,15 +6,23 @@ https://www.youtube.com/watch?v=EH4AaAEidVw
 ## Installation
 
 ### Clone the repository
-`git clone https://github.com/yourusername/eeg-graph-learning.git `  \
+`git clone https://github.com/yourusername/EEGLearn.git `
 
-`cd eeg-graph-learning`
+`cd EEGLearn`
 
 ###  Create and activate the conda environment
-`conda env create -f environment.yml` \
-`conda activate eeg-graph-learning`
+`conda env create -f environment.yml`
 
-Install the package in development mode \
+OR
+
+`conda env create -f environment.mac.yml` when on MacOS with Intel chips. \
+
+As the package MicroStructPy requires PyVoro which cannot be built from Apple Silicon Environments, `EEGLearn` can only be run on Intel-based Macs. Silicon Macs  under Rosetta emulation do not succeed to install MicroStructPy
+run `conda env create -f environment.mac-silicon.yml` to create an environment that omits MicroStructPy
+
+`conda activate EEGLearn`
+
+Install the package in development mode
 `pip install -e .`
 
 ## Project Structure
